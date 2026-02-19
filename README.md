@@ -1,8 +1,8 @@
-# 📊 Loan Take-Up Prediction
+# Loan Take-Up Prediction
 
 This project analyzes a randomized control trial (RCT) dataset of 53,000 microcredit customers to predict whether a customer will apply for a loan after receiving a marketing offer. Conducted as a Columbia University Data Analytics group project, the study tests seven machine learning models and finds that the best achievable ROC-AUC is approximately 0.70, which reflects the fundamental unpredictability of human financial decision-making rather than any deficiency in modeling approach.
 
-## 📁 Repository Structure
+## Repository Structure
 
 | File | Description |
 |---|---|
@@ -25,7 +25,7 @@ The dataset exhibits severe class imbalance: only 8.5% of customers applied, wit
 
 **Source:** Bertrand, M., Karlan, D., Mullainathan, S., Shafir, E., & Zinman, J. (2010). *What's Advertising Content Worth? Evidence from a Consumer Credit Marketing Field Experiment.* Quarterly Journal of Economics, 125(1), 263–306.
 
-## 🔬 Methodology
+## Methodology
 
 **Preprocessing:**
 - Removed post-application leakage variables that would not be available at prediction time
