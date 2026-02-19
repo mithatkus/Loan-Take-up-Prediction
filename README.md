@@ -1,6 +1,6 @@
 # 📊 Loan Take-Up Prediction
 
-This project analyzes a randomized control trial (RCT) dataset of 53,000 microcredit customers to predict whether a customer will apply for a loan after receiving a marketing offer. Conducted as a Columbia University Data Analytics group project, the study tests seven machine learning models and finds that the best achievable ROC-AUC is approximately 0.70 — a ceiling that reflects the fundamental unpredictability of human financial decision-making rather than any deficiency in modeling approach.
+This project analyzes a randomized control trial (RCT) dataset of 53,000 microcredit customers to predict whether a customer will apply for a loan after receiving a marketing offer. Conducted as a Columbia University Data Analytics group project, the study tests seven machine learning models and finds that the best achievable ROC-AUC is approximately 0.70, which reflects the fundamental unpredictability of human financial decision-making rather than any deficiency in modeling approach.
 
 ## 📁 Repository Structure
 
@@ -10,7 +10,7 @@ This project analyzes a randomized control trial (RCT) dataset of 53,000 microcr
 | `adcontentworth.csv` | Raw dataset — RCT data from a microcredit lender with 53,194 observations |
 | `DA Project Report.pdf` | Full written report with detailed methodology, results, and discussion |
 
-## 🗃️ Dataset
+## Dataset
 
 The dataset contains 53,194 observations and 27 features after preprocessing. It originates from a field experiment conducted by a microcredit lender in which customers were randomly assigned different marketing offer configurations.
 
@@ -44,7 +44,7 @@ The dataset exhibits severe class imbalance: only 8.5% of customers applied, wit
 
 Class imbalance was addressed through class weighting, threshold tuning, and SMOTE where applicable.
 
-## 📊 Results
+## Results
 
 | Model | AUC | Precision | Recall |
 |---|---|---|---|
@@ -58,7 +58,7 @@ Class imbalance was addressed through class weighting, threshold tuning, and SMO
 
 Standard Logistic Regression achieves the highest AUC (0.703) and is recommended for deployment due to its interpretability and competitive performance. XGBoost and LightGBM are preferred for customer ranking tasks. All models converge near AUC = 0.70, suggesting a data-imposed performance ceiling rather than a modeling limitation.
 
-## 🔑 Key Findings
+## Key Findings
 
 - **Dormancy is the strongest predictor:** Customers with longer periods of account inactivity are significantly less likely to apply, regardless of offer type.
 - **Interest rate deters applications:** Higher interest rates (captured by `offer4`) consistently reduce application probability across all models.
